@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Lucida Sans", sans-serif;
+  color: #333;
+  background: #eff5f8;
+  text-shadow: 0 0 0 transparent;
+  transition: text-shadow .5s;
+}
+
+::selection {
+  color: #444;
+  text-shadow: -0.2rem -0.2rem 0.2rem #fff, 0.2rem 0.2rem 0.2rem #dfebf1;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 6rem 1fr;
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 9 / 16;
+  border-radius: 1rem;
+  box-shadow: -1rem -1rem 1rem #fff, 1rem 1rem 1rem #dfebf1;
+  overflow: hidden;
+}
+
+#display {
+  width: calc(100% - 4rem);
+  height: 3rem;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: end;
+  box-shadow: inset -0.5rem -0.5rem 0.5rem #fff, inset 0.5rem 0.5rem 0.5rem #dfebf1;
+  word-break: break-all;
+}
+
+#keys {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(100% - 2rem);
+  margin: 1rem;
+}
+
+.keys-row {
+  display: flex;
+  width: calc(100%);
+  justify-content: space-between;
+}
+
+#keys button {
+  display: block;
+  margin: 0.5rem;
+  flex: 1;
+  aspect-ratio: 1 / 1;
+  color: inherit;
+  font-size: 1.5rem;
+  font-family: inherit;
+  border-radius: 50%;
+  box-shadow: -0.5rem -0.5rem 0.5rem #fff, 0.5rem 0.5rem 0.5rem #dfebf1;
+  border: 0;
+  background: inherit;
+  transition: all .3s;
+}
+
+#keys button:active {
+  box-shadow: inset -0.5rem -0.5rem 0.5rem #fff, inset 0.5rem 0.5rem 0.5rem #dfebf1;
+}

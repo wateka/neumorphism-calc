@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>電卓</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <div id="display">0</div>
+      <div id="keys">
+        <div class="keys-row">
+          <button onclick="reversePlusAndMinus()">±</button>
+          <button onclick="deleteOneNumber()">Del</button>
+          <button onclick="clearCurrentValue()">CE</button>
+          <button onclick="clearAll()">C</button>
+        </div>
+        <div class="keys-row">
+          <button onclick="setCharacter('7')">7</button>
+          <button onclick="setCharacter('8')">8</button>
+          <button onclick="setCharacter('9')">9</button>
+          <button onclick="setOperation('div')">/</button>
+        </div>
+        <div class="keys-row">
+          <button onclick="setCharacter('4')">4</button>
+          <button onclick="setCharacter('5')">5</button>
+          <button onclick="setCharacter('6')">6</button>
+          <button onclick="setOperation('mul')">*</button>
+        </div>
+        <div class="keys-row">
+          <button onclick="setCharacter('1')">1</button>
+          <button onclick="setCharacter('2')">2</button>
+          <button onclick="setCharacter('3')">3</button>
+          <button onclick="setOperation('sub')">-</button>
+        </div>
+        <div class="keys-row">
+          <button onclick="setCharacter('0')">0</button>
+          <button onclick="setCharacter('.')">.</button>
+          <button onclick="calculate()">=</button>
+          <button onclick="setOperation('add')">+</button>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
